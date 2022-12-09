@@ -14,30 +14,30 @@ export default class App extends React.Component {
     <Image         
           source={require('./assets/info.png')}
           resizeMode="contain"
-          style={styles.timage}
+          style={styles.limage}
           Link href="https://drive.google.com/file/d/1pMnbGQ3UKuFabwq1CNZ6LHyoveZH3KiH/view?usp=share_link"
         />
     <Image         
-          source={require('./assets/kuranradyo.png')}
-          resizeMode="contain"
-          style={styles.timage}
+          source={require('./assets/kuranradyo1.png')}
+          resizeMode="center"
+          style={styles.image}
           Link href="https://tevhidmeali.com/kurandinle"
         />
        <Image         
-          source={require('./assets/mydua.png')}
+          source={require('./assets/icon.jpg')}
           resizeMode="contain"
-          style={styles.timage}
+          style={styles.image}
         />
-        <Text style={styles.title}>Wellcome to My Dua App Hosgeldiniz</Text>
+        <Text style={styles.title}> My Dua App </Text>
         <Image         
-          source={require('./assets/mydua.png')}
+          source={require('./assets/icon.jpg')}
           resizeMode="contain"
-          style={styles.timage}
+          style={styles.image}
         />
         <Image         
-          source={require('./assets/radyocihank.png')}
+          source={require('./assets/radyocihan.jpg')}
           resizeMode="contain"
-          style={styles.timage}
+          style={styles.image}
           Link href="https://cihanradyo.com/"
         />         
       <Text >
@@ -52,13 +52,13 @@ export default class App extends React.Component {
           source={require('./assets/yasin.jpg')}
          resizeMode="contain"
           style={styles.timage}
-          Link href="https://kuran.diyanet.gov.tr/mushaf/kuran-1/yasin-suresi-36/ayet-1/kuran-yolu-meali-5"
+          Link href="https://onlinedua.org/buyuk-cevsen/6"
         /> 
        <Image         
           source={require('./assets/fetih.jpg')}
           resizeMode="contain"
           style={styles.timage}
-          Link href="https://kuran.diyanet.gov.tr/mushaf/kuran-1/fetih-suresi-48/ayet-1/kuran-yolu-meali-5"
+          Link href="https://onlinedua.org/buyuk-cevsen/20"
         /> 
       <Image         
           source={require('./assets/kuran.png')}
@@ -70,37 +70,37 @@ export default class App extends React.Component {
           source={require('./assets/naba.jpg')}
           resizeMode="contain"
           style={styles.timage}
-          Link href="https://cihanradyo.com/"
+          Link href="https://onlinedua.org/buyuk-cevsen/48"
         /> 
       <Image         
           source={require('./assets/mulk.png')}
           resizeMode="contain"
           style={styles.timage}
-          Link href="https://cihanradyo.com/"
+          Link href="https://onlinedua.org/buyuk-cevsen/42"
         />      
       <Image         
           source={require('./assets/shorts.png')}
           resizeMode="contain"
           style={styles.timage}
-          Link href="https://cihanradyo.com/"
+          Link href="https://onlinedua.org/kuran/sayfa/596"
         /> 
      <Image         
           source={require('./assets/hasr.png')}
           resizeMode="contain"
           style={styles.timage}
-          Link href="https://cihanradyo.com/"
+          Link href="https://onlinedua.org/buyuk-cevsen/40"
         />       
       <Image         
           source={require('./assets/rahman.png')}
           resizeMode="contain"
           style={styles.timage}
-          Link href="https://cihanradyo.com/"
+          Link href="https://onlinedua.org/buyuk-cevsen/32"
         /> 
      <Image         
           source={require('./assets/kuran.png')}
           resizeMode="contain"
           style={styles.timage}
-          Link href="https://cihanradyo.com/"
+          Link href="https://onlinedua.org/kuran"
         /> 
       
       </View>    
@@ -115,8 +115,23 @@ const styles = StyleSheet.create({
   container:{
     flex:1,
     width:'100%',
-    height:'100%',
-     
+    height:'100%',     
+   },
+   image:{
+    height:70,
+    width:70,
+    opacity:0.9,
+    alignContent:'center',
+    padding:10,
+    
+   },
+   limage:{
+    height:0,
+    width:80,
+    opacity:0.9,
+    alignContent:'center',
+    padding:10,
+    
    },
   app: {
     marginHorizontal: "auto",
@@ -152,6 +167,8 @@ const styles = StyleSheet.create({
     width:95,
     opacity:0.8,
     alignContent:'center',
+    borderColor:'orange',
+    borderWidth:3,
    
    },
    menuContainer:{
