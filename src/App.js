@@ -1,7 +1,23 @@
 import React from "react";
 import { Button, Image, StyleSheet,Text, View } from "react-native";
+import {Swiper,SwiperSlide} from 'swiper/react';
+import SwiperCore from 'swiper';
+/*import '/swiper/swiper-bundle.css';*/
+import './styles.css';
 
 
+function Bapp(){
+  const slides =[];
+  for (let i=0; i<4; i+=1){
+    slides.push(
+      <SwiperSlide key={'slide-${i}'}>
+        <img src = {'https://picsum.photos/id/${i+1}/500/300'} 
+        alt ={'Slide ${i}'}
+        />
+      </SwiperSlide>
+    )
+  }
+}
 
 export default class App extends React.Component {
     
@@ -10,6 +26,7 @@ export default class App extends React.Component {
   return (   
 
     <View style={styles.overlayContainer}>
+<Swiper>
     <View style={styles.topContainer}>
     <Image         
           source={require('./assets/info.png')}
@@ -18,7 +35,7 @@ export default class App extends React.Component {
           Link href="https://drive.google.com/file/d/1pMnbGQ3UKuFabwq1CNZ6LHyoveZH3KiH/view?usp=share_link"
         />
     <Image         
-          source={require('./assets/kuranradyo1.png')}
+          source={require('./assets/kuranradyo.png')}
           resizeMode="center"
           style={styles.image}
           Link href="https://tevhidmeali.com/kurandinle"
@@ -28,7 +45,7 @@ export default class App extends React.Component {
           resizeMode="contain"
           style={styles.image}
         />
-        <Text style={styles.title}> My Dua App </Text>
+        <Text style={styles.title}>My Dua App</Text>
         <Image         
           source={require('./assets/icon.jpg')}
           resizeMode="contain"
@@ -39,12 +56,13 @@ export default class App extends React.Component {
           resizeMode="contain"
           style={styles.image}
           Link href="https://cihanradyo.com/"
-        />         
-      <Text >
+        />     </View>   
+       </Swiper>       
+      <Text style={styles.text}> 
         You can find many dua's that you need daily, Read Qur'an, dua's, prays and many Books with this app{" : "}
         Bu applikasyon ile kur'an okuyabilir ve bircok dua ve kitaba ulasabilirsiniz {" "}
          </Text>
-    </View>       
+      
    
     <View style={styles.overlayContainer}> 
       <View style={styles.menuContainer}>
@@ -102,10 +120,11 @@ export default class App extends React.Component {
           style={styles.timage}
           Link href="https://onlinedua.org/kuran"
         /> 
-      
+    
       </View>    
-      <Button onPress={() => {}} title="Deneme button"
-      Link href="https://hizmetsource.com/" />
+     <Button onPress={() => {}} title="Deneme button"
+      Link href="https://hizmetsource.com/" /> 
+     
     </View>
     </View>
   );
@@ -119,14 +138,14 @@ const styles = StyleSheet.create({
    },
    image:{
     height:70,
-    width:70,
+    width:50,
     opacity:0.9,
     alignContent:'center',
-    padding:10,
+    padding:5,
     
    },
    limage:{
-    height:0,
+    height:40,
     width:80,
     opacity:0.9,
     alignContent:'center',
@@ -151,9 +170,9 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   text: {
-    lineHeight: "1.5em",
-    fontSize: "1.125rem",
-    marginVertical: "1em",
+    lineHeight: "1.2em",
+    fontSize: "1.0rem",
+    margin : "0.3em",
     textAlign: "center"
   },
   link: {
@@ -172,8 +191,8 @@ const styles = StyleSheet.create({
    
    },
    menuContainer:{
-    paddingTop:190, 
-    padding:15,
+    paddingTop:20, 
+    padding:5,
     flexDirection:'row',
     flexWrap: 'wrap',
     justifyContent:'space-around',       
@@ -183,8 +202,8 @@ const styles = StyleSheet.create({
     backgroundColor:'rgba(47,163,218, .4)'
    },
    topContainer:{
-    paddingTop:30,
-    height:'12%', 
+    paddingTop:15,
+    height:'10%', 
     padding:10,
     flexDirection:'row',
     flexWrap: 'wrap',
