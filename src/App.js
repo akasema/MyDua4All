@@ -52,7 +52,7 @@ export default class App extends React.Component {
           style={styles.image}
         />
         <Image         
-          source={require('./assets/radyocihank.png')}
+          source={require('./assets/radyocihan.jpg')}
           resizeMode="contain"
           style={styles.image}
           Link href="https://cihanradyo.com/"
@@ -138,14 +138,14 @@ const styles = StyleSheet.create({
    },
    image:{
     height:70,
-    width:70,
+    width:50,
     opacity:0.9,
     alignContent:'center',
-    padding:10,
+    padding:5,
     
    },
    limage:{
-    height:20,
+    height:40,
     width:80,
     opacity:0.9,
     alignContent:'center',
