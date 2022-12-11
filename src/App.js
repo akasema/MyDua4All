@@ -1,32 +1,18 @@
 import React from "react";
 import { Button, Image, StyleSheet,Text, View } from "react-native";
-import {Swiper,SwiperSlide} from 'swiper/react';
-import SwiperCore from 'swiper';
-/*import '/swiper/swiper-bundle.css';*/
-import './styles.css';
 
+ 
 
-function Bapp(){
-  const slides =[];
-  for (let i=0; i<4; i+=1){
-    slides.push(
-      <SwiperSlide key={'slide-${i}'}>
-        <img src = {'https://picsum.photos/id/${i+1}/500/300'} 
-        alt ={'Slide ${i}'}
-        />
-      </SwiperSlide>
-    )
-  }
-}
 
 export default class App extends React.Component {
     
   render (){
  
   return (   
+     
 
     <View style={styles.overlayContainer}>
-<Swiper>
+
     <View style={styles.topContainer}>
     <Image         
           source={require('./assets/info.png')}
@@ -57,13 +43,12 @@ export default class App extends React.Component {
           style={styles.image}
           Link href="https://cihanradyo.com/"
         />     </View>   
-       </Swiper>       
+        
       <Text style={styles.text}> 
         You can find many dua's that you need daily, Read Qur'an, dua's, prays and many Books with this app{" : "}
         Bu applikasyon ile kur'an okuyabilir ve bircok dua ve kitaba ulasabilirsiniz {" "}
          </Text>
       
-   
     <View style={styles.overlayContainer}> 
       <View style={styles.menuContainer}>
       <Image         
@@ -127,9 +112,12 @@ export default class App extends React.Component {
      
     </View>
     </View>
+   
   );
 }
 }
+
+
 const styles = StyleSheet.create({
   container:{
     flex:1,
@@ -145,8 +133,8 @@ const styles = StyleSheet.create({
     
    },
    limage:{
-    height:40,
-    width:80,
+    height:30,
+    width:40,
     opacity:0.9,
     alignContent:'center',
     padding:10,
@@ -210,7 +198,9 @@ const styles = StyleSheet.create({
     borderBottomWidth:2,
     borderBottomColor:'#ddd',
     backgroundColor:'#fafbfc'
-   }
+   },
+  
+  
 });
 
  
