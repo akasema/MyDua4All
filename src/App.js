@@ -69,10 +69,10 @@ export default class App extends React.Component {
           Link href="https://onlinedua.org/buyuk-cevsen/20"
         /> 
       <Image         
-          source={require('./assets/kuran.png')}
+          source={require('./assets/vakia.png')}
           resizeMode="contain"
           style={styles.timage}
-          Link href="https://onlinedua.org/kuran"
+          Link href="https://onlinedua.org/kuran/sayfa/534"
         />      
       <Image         
           source={require('./assets/naba.jpg')}
