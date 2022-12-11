@@ -1,18 +1,18 @@
 import React from "react";
 import { Button, Image, StyleSheet,Text, View } from "react-native";
+ 
+import './styles.css';
 
  
-
 
 export default class App extends React.Component {
     
   render (){
  
   return (   
-     
 
     <View style={styles.overlayContainer}>
-
+ 
     <View style={styles.topContainer}>
     <Image         
           source={require('./assets/info.png')}
@@ -43,12 +43,17 @@ export default class App extends React.Component {
           style={styles.image}
           Link href="https://cihanradyo.com/"
         />     </View>   
-        
+         
       <Text style={styles.text}> 
         You can find many dua's that you need daily, Read Qur'an, dua's, prays and many Books with this app{" : "}
         Bu applikasyon ile kur'an okuyabilir ve bircok dua ve kitaba ulasabilirsiniz {" "}
          </Text>
-      
+         <Button onPress={() => { }} title="KUR'AN BOLUMU"
+       />    
+         <Text style={styles.text}
+         >Bu bolumde cok okunan surelere dogrudan kisa yol ile ulasabilirsiniz. Hatim okumak istediginizde de Kur'an-i Kerim in tamamini bu bolumde bulabilirsiniz
+         siteye emailiniz ile kayit olur iseniz baska zaman ve baska cihazlardan girdiginizde kaldiginiz yerden devam edebilirsiniz ve arkadaslariniz ile hatim gurubu olusturup takip edebilirsiniz. Allah kabul etsin 
+         </Text>
     <View style={styles.overlayContainer}> 
       <View style={styles.menuContainer}>
       <Image         
@@ -105,19 +110,16 @@ export default class App extends React.Component {
           style={styles.timage}
           Link href="https://onlinedua.org/kuran"
         /> 
+          </View>    
+     <Button onPress={() => {}} title="DUA BOLUMU"
+      Link href="https://hizmetsource.com/" />      
+    </View>
+    </View>
+
     
-      </View>    
-     <Button onPress={() => {}} title="Deneme button"
-      Link href="https://hizmetsource.com/" /> 
-     
-    </View>
-    </View>
-   
   );
 }
 }
-
-
 const styles = StyleSheet.create({
   container:{
     flex:1,
@@ -133,8 +135,8 @@ const styles = StyleSheet.create({
     
    },
    limage:{
-    height:30,
-    width:40,
+    height:40,
+    width:30,
     opacity:0.9,
     alignContent:'center',
     padding:10,
@@ -147,21 +149,26 @@ const styles = StyleSheet.create({
   logo: {
     height: 80
   },
-  header: {
-    padding: 20
+  header: {   
+    fontSize: "1.5em",
+    marginVertical: "1em",
+    textAlign: "center",
+    backgroundColor: '#64DDBB',
+    padding:5,
     
   },
   title: {
     fontWeight: "bold",
     fontSize: "1.5rem",
     marginVertical: "1em",
-    textAlign: "center"
+    textAlign: "center",      
   },
   text: {
     lineHeight: "1.2em",
-    fontSize: "1.0rem",
+    fontSize: "0.9rem",
     margin : "0.3em",
-    textAlign: "center"
+    textAlign: "center",  
+    backgroundColor: '##83D6DE',  
   },
   link: {
     color: "#1B95E0"
@@ -190,18 +197,16 @@ const styles = StyleSheet.create({
     backgroundColor:'rgba(47,163,218, .4)'
    },
    topContainer:{
-    paddingTop:15,
-    height:'10%', 
-    padding:10,
+     height:'10%', 
+    alignItems: 'center',
+    justifyContent: 'center',   
     flexDirection:'row',
-    flexWrap: 'wrap',
-    borderBottomWidth:2,
-    borderBottomColor:'#ddd',
+    flexWrap: 'wrap',   
     backgroundColor:'#fafbfc'
-   },
-  
-  
+   }
 });
 
  
+
+
 
