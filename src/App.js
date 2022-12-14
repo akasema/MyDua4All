@@ -341,9 +341,30 @@ export default class App extends React.Component {
      <Button onPress={() => {}} title="Gelistirilen Bolum"
       Link href="https://hizmetsource.com/" />    
         <Text style={styles.text}
-         >Bu bolum sizden gelen taleplere gore gelistirilmektedir.
+         >Bu bolum sizden gelen taleplere gore gelistirilecektir.
          </Text>  
     </View>
+    <View style={styles.overlayContainer}> 
+      <View style={styles.menuContainer}>
+      <Image         
+           source={require('./assets/inst1.png')}
+         resizeMode="contain"
+          style={styles.image}
+          Link href="https://www.instagram.com/akasema1/"
+        /> 
+        <Image         
+           source={require('./assets/faceb.jpg')}
+         resizeMode="contain"
+          style={styles.image}
+          Link href="https://www.facebook.com/kadir.gok.583"
+        />
+        <Image         
+           source={require('./assets/tweet1.png')}
+         resizeMode="contain"
+          style={styles.image}
+          Link href="https://twitter.com/akasema"
+        />
+        </View></View>
     </View>
 
     
