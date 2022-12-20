@@ -1,15 +1,13 @@
 import React from "react";
 import { Button, Image, StyleSheet,Text, View } from "react-native";
- 
+import About from "./about";
 import './styles.css';
-
  
-
-export default class App extends React.Component {
+ 
+export default class App extends React.Component {   
     
-  render (){
- 
-  return (   
+  render (){ 
+  return (      
 
     <View style={styles.overlayContainer}>
  
@@ -120,12 +118,7 @@ export default class App extends React.Component {
     </View>
     <View style={styles.overlayContainer}> 
       <View style={styles.menuContainer}>
-      <Image         
-         source={require('./assets/cevsen.png')}
-         resizeMode="contain"
-          style={styles.timage}
-          Link href="https://www.onlinedua.org/cevsen"
-        /> 
+      
        <Image         
           source={require('./assets/kulubuddaria.png')}
           resizeMode="contain"
@@ -227,6 +220,18 @@ export default class App extends React.Component {
           resizeMode="contain"
           style={styles.timage}
           Link href="https://www.onlinedua.org/buyuk-cevsen/418"
+        /> 
+         <Image         
+         source={require('./assets/cevsens.png')}
+          resizeMode="contain"
+          style={styles.timage}
+          Link href="https://drive.google.com/file/d/1Me7QOa473HZrdCnGfE_HCphom7421rWU/view?usp=share_link"
+        /> 
+        <Image         
+         source={require('./assets/cevsen.png')}
+         resizeMode="contain"
+          style={styles.timage}
+          Link href="https://www.onlinedua.org/cevsen"
         /> 
           </View>    
           
@@ -347,7 +352,7 @@ export default class App extends React.Component {
     <View style={styles.overlayContainer}> 
       <View style={styles.menuContainer}>
       <Image         
-           source={require('./assets/inst1.png')}
+           source={require('./assets/inst1.png')}          
          resizeMode="contain"
           style={styles.image}
           Link href="https://www.instagram.com/akasema1/"
