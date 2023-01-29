@@ -1,17 +1,21 @@
 import React from "react";
-import { Button, Image, StyleSheet,Text, View } from "react-native";
-import About from "./about";
+import { Button, Image, StyleSheet,Text, View} from "react-native";
+
 import './styles.css';
- 
- 
+
+
 export default class App extends React.Component {   
-    
+   
   render (){ 
   return (      
+   
 
-    <View style={styles.overlayContainer}>
+<div> 
+
+  <View style={styles.overlayContainer}>
  
     <View style={styles.topContainer}>
+  
     <Image         
           source={require('./assets/info.png')}
           resizeMode="contain"
@@ -343,6 +347,45 @@ export default class App extends React.Component {
           Link href="https://drive.google.com/file/d/1dt2JA2zgX7VgoUo1nkvfqW_MZXxq4ztt/view?usp=share_link"
         /> 
           </View>    
+          <Button onPress={() => {}} title="Multi Media"
+      Link href="https://hizmetsource.com/" />    
+        <Text style={styles.text}
+         >Bu bolumde Fethulah Gulen Hoca Efendinin vaazlarini kendi sitesinde yer aldigi sekilde bulabilirsiniz.
+         </Text> 
+         <View style={styles.overlayContainer}> 
+      <View style={styles.menuContainer}>
+      <Image         
+           source={require('./assets/he.png')}
+         resizeMode="contain"
+          style={styles.timage}
+          Link href="https://fgulen.com/tr/ses-ve-video-tr"
+        /> 
+       <Image         
+           source={require('./assets/bamtelı.png')}
+          resizeMode="contain"
+          style={styles.timage}
+          Link href="https://www.herkul.org/bamteli-arsiv/"
+        /> 
+      <Image         
+           source={require('./assets/herkul.png')}
+          resizeMode="contain"
+          style={styles.timage}
+          Link href="https://www.herkul.org/herkul-nagme/page/4/"
+        />      
+      <Image         
+         source={require('./assets/konf.png')}
+          resizeMode="contain"
+          style={styles.timage}
+          Link href="https://fgulen.com/tr/ses-ve-video-tr/siirleri-konferanslari"
+        />    
+        <Image         
+         source={require('./assets/hyoutube.png')}
+          resizeMode="contain"
+          style={styles.timage}
+          Link href="https://www.youtube.com/@HerkulNagme/featured"
+        />  
+         </View>
+         </View>
      <Button onPress={() => {}} title="Gelistirilen Bolum"
       Link href="https://hizmetsource.com/" />    
         <Text style={styles.text}
@@ -372,7 +415,7 @@ export default class App extends React.Component {
         </View></View>
     </View>
 
-    
+    </div>  
   );
 }
 }
