@@ -384,6 +384,12 @@ export default class App extends React.Component {
           style={styles.timage}
           Link href="https://www.youtube.com/@HerkulNagme/featured"
         />  
+         <Image         
+         source={require('./assets/sirk.png')}
+          resizeMode="contain"
+          style={styles.timage}
+          Link href="https://www.youtube.com/playlist?list=PLoMiO6MkG5fxjfW9k42bCPWRKholXIb91"
+        /> 
          </View>
          </View>
      <Button onPress={() => {}} title="Gelistirilen Bolum"
