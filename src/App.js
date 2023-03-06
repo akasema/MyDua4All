@@ -2,20 +2,21 @@ import React from "react";
 import { Button, Image, StyleSheet,Text, View} from "react-native";
 
 import './styles.css';
+import About from "./about";
 
-
+const about=  About()
 export default class App extends React.Component {   
    
   render (){ 
   return (      
-   
+  
 
 <div> 
 
   <View style={styles.overlayContainer}>
  
     <View style={styles.topContainer}>
-  
+  <button onClick={about}>About Us</button>
     <Image         
           source={require('./assets/info.png')}
           resizeMode="contain"
@@ -105,6 +106,12 @@ export default class App extends React.Component {
           resizeMode="contain"
           style={styles.timage}
           Link href="https://onlinedua.org/buyuk-cevsen/32"
+        /> 
+          <Image         
+          source={require('./assets/kurany.png')}
+          resizeMode="contain"
+          style={styles.timage}
+          Link href="https://kuran.gen.tr/"
         /> 
      <Image         
           source={require('./assets/kuran.png')}
@@ -236,6 +243,12 @@ export default class App extends React.Component {
          resizeMode="contain"
           style={styles.timage}
           Link href="https://www.onlinedua.org/cevsen"
+        /> 
+         <Image         
+         source={require('./assets/tesbihats.png')}
+         resizeMode="contain"
+          style={styles.timage}
+          Link href="https://soundcloud.com/hizmetten/sets/tesbihat"
         /> 
           </View>    
           
