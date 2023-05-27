@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Image, StyleSheet,Text, View} from "react-native";
-import About from "./About";
 import './styles.css';
 
  
