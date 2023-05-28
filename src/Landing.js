@@ -406,6 +406,11 @@ export default function LandingScreen ({navigation}) {
         <Text style={styles.text}
          >Bu bolum sizden gelen taleplere gore gelistirilecektir.
          </Text>  
+         <Button onPress={() => {}} title="Sosyal Medya"
+      Link href="https://hizmetsource.com/" />    
+        <Text style={styles.text}
+         >Bu tarz iceriklerin devami icin Youtube kanalima uye olmayi ve icerikleri sevdi iseniz arkadaslariniza tavsiye etmeyi unutmayin... Tesekkur ederim 
+         </Text>  
     </View>
     <View style={styles.overlayContainer}> 
       <View style={styles.menuContainer}>
@@ -441,8 +446,8 @@ const styles = StyleSheet.create({
     height:'100%',     
    },
    image:{
-    height:70,
-    width:50,
+    height:50,
+    width:70,
     opacity:0.9,
     alignContent:'center',
     padding:5,    
@@ -507,7 +512,7 @@ const styles = StyleSheet.create({
    
    },
    menuContainer:{
-    paddingTop:20, 
+    paddingTop:10, 
     padding:5,
     flexDirection:'row',
     flexWrap: 'wrap',
