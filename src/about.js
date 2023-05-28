@@ -6,31 +6,31 @@ const About = ({navigation}) =>{
         <View style ={styles.aboutContainer}>
             <Text style={ styles.mainHeader}> Kadir GOK </Text>
             <Text style={styles.paraStyle}>QA Test Engineer</Text>
-            <Text style={styles.paraStyle}>...ve aciz bir kul</Text>
+            
            <View> 
             <Image
                 style={styles.imgStyle}
                 source={require('./assets/kadirpic.jpg')}
              />
+             <Text style={styles.paraStyle}>...ve aciz bir kul</Text>
             </View>
-        <View style={styles.aboutLayout}>
-             
-            <Text style={styles.paraStyle}>
-           My Dua uygulamasina hosgeldiniz, kendi okuma ihtiyaclarim icin hazirladigim bu uygulama,
+        <View style={styles.aboutLayout}>             
+            <Text style={styles.paraStyle}> My Dua uygulamasina hosgeldiniz, kendi okuma ihtiyaclarim icin hazirladigim bu uygulama,
             umarim sizlerin de dua ve kitap okuma ihtiyacinizi buyuk oranda karsilayacaktir.
-             Dostlariniza tavsiye etmeyi ve dua etmeyi unutmayin.Tesekkur ederim. 
+             Dostlariniza tavsiye etmeyi ve dua etmeyi unutmayin.Tesekkur ederim.           
+            </Text>
+            <Text style={styles.aboutSubHeader}> Program Aciklamasi
              Bu uygulamada bir cok dua ve kitap linklerine ulasma imkani vardir. Kur'an cvesen ve gibi  surekli okunan kitaplara kaldiginiz yerden sonra baska bir cihaz dan da olsa devam etme imkani vardir.
              Bu site cihaziniza sadece linkjleri yukler . sizden herhangi bir kayit vs istemedigi gibi (hatimli okuma yapmak  haric) kimlik bilgilerinizi de kayit etmez.
              bu  uygulamada okuyabileceginiz kitap video vs size ayrica bir yerden alinarak getirilmiyor. zaten yayinlanmakta olan yerine sizi goturuyor. Bu bakimdan kimsenin hakkina girilmiyor . 
              yani bir prf klitap web de bir yerde zaten yayinlanmakta iken biz oraya ulasip onu okuyoruz.
-              ona zara vermek bir yana onun web sitesine trafik saglamis oluyoruz. Yine de kusurumuz var ise Rabbim affetsin. Niyetimiz halisdir. dualarinizla...
-</Text>
-<Text style={styles.aboutSubHeader}>For more details and 
+              ona zara vermek bir yana onun web sitesine trafik saglamis oluyoruz. Yine de kusurumuz var ise Rabbim affetsin. Niyetimiz halisdir. dualarinizla...</Text>
+            <Text style={styles.aboutSubHeader}>For more details and 
              Special thanks to: https://www.ozgurherkul.org/, https://kuran.diyanet.gov.tr/, https://www.onlinedua.org/</Text>
         
-<View style={styles.overlayContainer}> 
-      <View style={styles.menuContainer}>
-      <Image         
+    <View style={styles.overlayContainer}> 
+         <View style={styles.menuContainer}>
+         <Image         
            source={require('./assets/inst1.png')}          
          resizeMode="contain"
           style={styles.image}
@@ -68,8 +68,8 @@ imgStyle:{
     borderRadius:100,
 },
 mainHeader:{
-    fontSize:30,
-    color:"#344055",
+    fontSize:20,
+    backgroundColor:'rgba(1,150,230, .5)',
     textTransform:"uppercase",
     fontWeight:"500",
     marginTop:20,
@@ -77,20 +77,19 @@ mainHeader:{
    
 },
 paraStyle:{
-    fonstSize:20,
+    fonstSize:50,
     color:"#344055",
-    fontWeight:"500",
-    marginTop:10,
-    marginBottom:10,
-   padding:15,
+    fontWeight:"500",    
+    padding:15,
 },
 aboutSubHeader:{
-    fontsize:50,
+    fontsize:30,
     color:"blue",
     fontWeight:"500",
     margineVertical:15,
     fontFamily:"JosefinSans_700Bold",
     alignSelf:"center",
+    padding:15,
     }, 
  menuContainer:{
         paddingTop:20, 
@@ -101,8 +100,8 @@ aboutSubHeader:{
        },
    overlayContainer:{
         flex:1,
-        backgroundColor:'rgba(47,163,218, .4)'
-       },
+        backgroundColor:'rgba(1,150,230, .5)'
+        },
        image:{
         height:70,
         width:80,
