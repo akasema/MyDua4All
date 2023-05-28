@@ -14,12 +14,13 @@ const About = ({navigation}) =>{
              />
              <Text style={styles.paraStyle}>...ve aciz bir kul</Text>
             </View>
-        <View style={styles.aboutLayout}>             
-            <Text style={styles.paraStyle}> My Dua uygulamasina hosgeldiniz, kendi okuma ihtiyaclarim icin hazirladigim bu uygulama,
+        <View style={styles.aboutContainer}>             
+            <Text style={styles.aboutSubHeader}> My Dua uygulamasina hosgeldiniz, kendi okuma ihtiyaclarim icin hazirladigim bu uygulama,
             umarim sizlerin de dua ve kitap okuma ihtiyacinizi buyuk oranda karsilayacaktir.
              Dostlariniza tavsiye etmeyi ve dua etmeyi unutmayin.Tesekkur ederim.           
             </Text>
-            <Text style={styles.aboutSubHeader}> Program Aciklamasi
+            <Text style={styles.paraStyle}>Program Aciklamasi : </Text>
+            <Text style={styles.paraStyle}> 
              Bu uygulamada bir cok dua ve kitap linklerine ulasma imkani vardir. Kur'an cvesen ve gibi  surekli okunan kitaplara kaldiginiz yerden sonra baska bir cihaz dan da olsa devam etme imkani vardir.
              Bu site cihaziniza sadece linkjleri yukler . sizden herhangi bir kayit vs istemedigi gibi (hatimli okuma yapmak  haric) kimlik bilgilerinizi de kayit etmez.
              bu  uygulamada okuyabileceginiz kitap video vs size ayrica bir yerden alinarak getirilmiyor. zaten yayinlanmakta olan yerine sizi goturuyor. Bu bakimdan kimsenin hakkina girilmiyor . 
@@ -63,9 +64,10 @@ aboutContainer:{
     alignItems:"center",
 },
 imgStyle:{
-    width:150,
+    width:200,
     height:150,
-    borderRadius:100,
+    borderRadius:150,
+    alignItems:"center",
 },
 mainHeader:{
     fontSize:20,
@@ -77,7 +79,7 @@ mainHeader:{
    
 },
 paraStyle:{
-    fonstSize:50,
+    fonstSize:30,
     color:"#344055",
     fontWeight:"500",    
     padding:15,
@@ -92,19 +94,19 @@ aboutSubHeader:{
     padding:15,
     }, 
  menuContainer:{
-        paddingTop:20, 
+        paddingTop:10, 
         padding:5,
         flexDirection:'row',
         flexWrap: 'wrap',
         justifyContent:'space-around',       
        },
-   overlayContainer:{
+overlayContainer:{
         flex:1,
         backgroundColor:'rgba(1,150,230, .5)'
         },
-       image:{
-        height:70,
-        width:80,
+image:{
+        height:50,
+        width:70,
         opacity:0.9,
         alignContent:'center',
         padding:5,
