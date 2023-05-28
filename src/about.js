@@ -26,8 +26,8 @@ const About = ({navigation}) =>{
              bu  uygulamada okuyabileceginiz kitap video vs size ayrica bir yerden alinarak getirilmiyor. zaten yayinlanmakta olan yerine sizi goturuyor. Bu bakimdan kimsenin hakkina girilmiyor . 
              yani bir prf klitap web de bir yerde zaten yayinlanmakta iken biz oraya ulasip onu okuyoruz.
               ona zara vermek bir yana onun web sitesine trafik saglamis oluyoruz. Yine de kusurumuz var ise Rabbim affetsin. Niyetimiz halisdir. dualarinizla...</Text>
-            <Text style={styles.aboutSubHeader}>For more details and 
-             Special thanks to: https://www.ozgurherkul.org/, https://kuran.diyanet.gov.tr/, https://www.onlinedua.org/</Text>
+            <Text style={styles.aboutSubHeader}>  For more details and 
+             Special thanks to the web sites : https://www.ozgurherkul.org/, https://kuran.diyanet.gov.tr/, https://www.onlinedua.org/</Text>
         
     <View style={styles.overlayContainer}> 
          <View style={styles.menuContainer}>
