@@ -39,6 +39,7 @@ export default function LandingScreen ({navigation}) {
           style={styles.image}
           Link href="https://www.youtube.com/@Tr724"
         /> 
+        
         <Button 
         title="About Us"
         onPress={()=> navigation.navigate("About")}
@@ -482,9 +483,9 @@ const styles = StyleSheet.create({
     marginVertical: "1em",
     textAlign: "center",
     backgroundColor: '#64DDBB',
-    padding:5,
-    
+    padding:5,    
   },
+  
   title: {
     fontWeight: "bold",
     fontSize: "1.5rem",
