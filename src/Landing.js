@@ -1,41 +1,40 @@
 import React from "react";
 import { Button, Image, StyleSheet,Text, View} from "react-native";
-import './styles.css';
-
  
 export default function LandingScreen ({navigation}) {    
    
- return (        
-
+ return (      
+   
 <div> 
-
   <View style={styles.overlayContainer}>
  
     <View style={styles.topContainer}>
-   
+    <Image         
+          source={require('./assets/icon.jpg')}
+          resizeMode="contain"
+          style={styles.image}
+        />
+        <Text style={styles.title}>MyDua </Text>
+        
     <Image         
           source={require('./assets/kuranradyo1.png')}
           resizeMode="center"
           style={styles.kimage}
           Link href="https://tevhidmeali.com/kurandinle"
         />
-       <Image         
-          source={require('./assets/icon.jpg')}
-          resizeMode="contain"
-          style={styles.image}
-        />
-        <Text style={styles.title}>My Dua App</Text>
-        <Image         
-          source={require('./assets/icon.jpg')}
-          resizeMode="contain"
-          style={styles.image}
-        />
+              
         <Image         
           source={require('./assets/radyocihan.jpg')}
           resizeMode="contain"
           style={styles.image}
           Link href="https://cihanradyo.com/"
         />   
+         <Image         
+          source={require('./assets/tr724.jpg')}
+          resizeMode="contain"
+          style={styles.image}
+          Link href="https://www.youtube.com/@Tr724"
+        /> 
         <Button 
         title="About Us"
         onPress={()=> navigation.navigate("About")}
@@ -432,7 +431,8 @@ export default function LandingScreen ({navigation}) {
           style={styles.image}
           Link href="https://twitter.com/akasema"
         />
-        </View></View>
+        </View>
+        </View>
     </View>
 
     </div>  

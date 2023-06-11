@@ -8,8 +8,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 const Stack =createStackNavigator();
 export default function App() {
   return (
-    
+       
     <NavigationContainer>
+   
       <Stack.Navigator initialRouteName="Landing">
         <Stack.Screen name="Landing" component={LandingScreen} options={{headerShown:false}}/>
         <Stack.Screen name="About" component={About} />
@@ -17,5 +18,6 @@ export default function App() {
       </Stack.Navigator>
 
     </NavigationContainer>
+   
   );
 }
