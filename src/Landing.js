@@ -410,6 +410,36 @@ export default function LandingScreen ({navigation}) {
         <Text style={styles.text}
          >Bu bolum sizden gelen taleplere gore gelistirilecektir.
          </Text>  
+         <View style={styles.overlayContainer}> 
+      <View style={styles.menuContainer}>
+      <Image         
+           source={require('./assets/sahadah.png')}
+         resizeMode="contain"
+          style={styles.timage}
+          Link href=        
+         "https://docs.google.com/document/d/1Vx_pZfqg61EYECArBFYcWk2Zxw49QVgK/edit?usp=sharing&ouid=117849126044996544505&rtpof=true&sd=true"
+         /> 
+          <Image         
+           source={require('./assets/salah.png')}
+         resizeMode="contain"
+          style={styles.timage}
+          Link href=        
+         "https://drive.google.com/file/d/1nGOVmwsGggL4UQ_x8oDuveMKBLmIqoV3/view?usp=sharing"
+         /> 
+          <Image         
+           source={require('./assets/namaz.png')}
+         resizeMode="contain"
+          style={styles.timage}
+          Link href= "https://stepbystepsalah.wordpress.com/duas/"
+          /> 
+            <Image         
+           source={require('./assets/hizmet.png')}
+         resizeMode="contain"
+          style={styles.timage}
+          Link href= "https://hizmetten.com/"
+          /> 
+     </View>
+         </View>
          <Button onPress={() => {}} title="Sosyal Medya"
       Link href="https://hizmetsource.com/" />    
         <Text style={styles.text}
